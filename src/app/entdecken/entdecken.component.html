@@ -1,0 +1,70 @@
+
+
+<div id="gericht-layer-form">
+  <div id="gericht-kachel-form">
+    <form>
+      <div id="image-form">
+        <div id="image-form-upload">
+          <div class="image-upload">
+            <label for="file-input">
+              <img [src]="imageUrl" height="auto" width="700"/>
+            </label>
+              <input id="file-input" type="file" (change)="handleFileInput($event.target.files)" required/>
+          </div>
+        </div>
+      </div>
+      <div id="gerichtname-form">
+        <input type="text" class="txt" name="recipeName" placeholder="Rezeptname" [(ngModel)]="recipeName" required>
+      </div>
+      <div id="gericht-desc-form">
+        Beschreibung
+      </div>
+      <div id="text-form">
+        <input type="text" class="txt" name="recipeDescription" placeholder="Rezeptbeschreibung / Rezeptzubereitung" [(ngModel)]="recipeDesc" required>
+      </div>
+      <div id="button">
+        <input type="submit" class="btn" value="Erstellen" (click)="addItem()">
+      </div>
+    </form>
+  </div>  
+</div>
+
+<div id="gericht-layer">
+  <div id="gericht-kachel">
+    <div id="image">
+      <img src="/assets/gerichte/bratwurst.jpg" alt="Bratwurst"/>
+    </div>
+    <div id="gerichtname">
+      Bratwurst
+    </div>
+    <div id="gericht-desc">
+      Beschreibung
+    </div>
+    <div id="text">
+      Sehr einfach zum zubereiten! Für 2-3 Personen
+    </div>
+    <div id="gericht-bewertung">
+
+    </div>
+  </div>  
+</div>
+
+<div id="gericht-layer" *ngFor="let recipe of recipes.recipeName">
+  <div id="gericht-kachel">
+    <div id="image" *ngFor="let recipe of recipes.imageUrl2">
+      <img src="{{recipe}}"/>
+    </div>
+    <div id="gerichtname">
+      {{recipe}}
+    </div>
+    <div id="gericht-desc">
+      Beschreibung
+    </div>
+    <div id="text" *ngFor="let recipe of recipes.recipeDesc">
+      {{recipe}}
+    </div>
+    <div id="gericht-bewertung">
+
+    </div>
+  </div>  
+</div>

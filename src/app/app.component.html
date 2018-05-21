@@ -1,0 +1,27 @@
+<div id="wrapper">
+  <div id="nav">
+    <div id="search-form">
+
+      <div id="buttons">
+        <ul>
+          <li><a routerLink="/entdecken" routerLinkActive="active"><div id="target">Entdecken</div></a></li>
+          <li><a routerLink="/kontinente" routerLinkActive="active"><div id="target">Kontinente</div></a></li>
+          <li><a routerLink="/feloferie" routerLinkActive="active"><div id="target">Feloferie</div></a></li>
+          <li><a routerLink="/impressum" routerLinkActive="active"><div id="target">Impressum</div></a></li>
+          <li><a routerLink="/geschichte" routerLinkActive="active"><div id="target">Geschichte</div></a></li>        
+        </ul>
+      </div>
+      
+      <div id="search">
+        <input type="text" name="suche" placeholder="L&auml;ndersuche" id="suche" onkeyup="showResult(this.value)" autocomplete="off">
+          <div id="livesearch"></div>
+      </div>
+
+    </div>
+
+  </div>
+  <div id="login" [@login]>
+      <div id="login-text">Login</div>
+    </div>
+</div>
+<router-outlet></router-outlet>

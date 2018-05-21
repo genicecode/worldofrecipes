@@ -1,0 +1,156 @@
+//NAVIGATOR
+
+#body, html {
+    background-color: #9BD770;
+}
+
+#nav {
+    float: left;
+    width: 566.34px;
+    left: 0;
+    right: 0;
+    top: 25px;
+    background-color: #EBF7E3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#suche { /*SUCHLEISTE*/
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    width: 566.33px;
+    line-height: 33px;
+    padding-left: 10px;
+    background-color: #EBF7E3;
+    text-align: center;
+}
+
+#suche:focus {
+    outline: none;
+}
+
+#searchbtn {
+    background-color: #EBF7E3;
+    border: 0;
+}
+
+#search {
+	width: 566.34px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-form {
+	width: 566.34px;
+	float: left;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding: 10px 18px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    box-sizing: border-box;
+    background-color: #EBF7E3;
+}
+
+#buttons {
+    width: 566.34px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+#buttons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EBF7E3;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#buttons li {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#buttons li:hover {
+    background-color: lightgrey;
+}
+
+#buttons a {
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+#livesearch {
+    max-height: 212px;
+    overflow-x: none;
+    overflow-y: scroll;
+}
+
+#livesearch a:hover {
+    background-color: lightgrey; 
+}
+
+#target {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#target:hover {
+    background-color: lightgrey;
+}
+
+.active {
+    background-color: lightgrey;
+    color: black;
+}
+
+#wrapper{
+    width: 616.34px;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 25px;
+    background-color: #EBF7E3;
+    box-shadow: 0px 0px 100px 0px #1B3409;
+    border-radius: 10px;
+    display: flex;
+}
+
+#login{
+    width: 50px;
+
+    background-color: #4CAF50;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+}
+
+#login-text{
+    margin: auto;
+    text-align: center;
+}
